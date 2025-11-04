@@ -21,7 +21,6 @@ class Sheet {
 
                     // Mark this column to be zeroed
                     matrix[0][j] = 0;
-
                     // Mark this row to be zeroed
                     matrix[i][0] = 0;
                 }

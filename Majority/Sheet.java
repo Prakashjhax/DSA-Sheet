@@ -11,7 +11,6 @@ class Sheet {
             if(freq == 0){
                 ans = nums[i];
             }
-
             // If current element matches candidate, increase frequency
             if(ans == nums[i]){
                 freq++;
