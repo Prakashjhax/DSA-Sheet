@@ -13,12 +13,10 @@ class Sheet {
                     if (i == 0) {
                         firstRow = true;
                     }
-
                     // If 0 is in first column, remember it
                     if (j == 0) {
                         firstCol = true;
                     }
-
                     // Mark this column to be zeroed
                     matrix[0][j] = 0;
                     // Mark this row to be zeroed
@@ -26,7 +24,6 @@ class Sheet {
                 }
             }
         }
-
         // Step 2: Set cells to 0 if their row or column was marked
         for (int i = 1; i < matrix.length; i++) {
             for (int j = 1; j < matrix[0].length; j++) {
@@ -37,14 +34,12 @@ class Sheet {
                 }
             }
         }
-
         // Step 3: Zero entire first row if needed
         if (firstRow) {
             for (int j = 0; j < matrix[0].length; j++) {
                 matrix[0][j] = 0;
             }
         }
-
         // Step 4: Zero entire first column if needed
         if (firstCol) {
             for (int i = 0; i < matrix.length; i++) {
